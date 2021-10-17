@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Section({title,backgroundImg,description,leftBtnText,rightBtnText,}) {
   return (
-    <Wrap bgImage={backgroundImg}>
+    <Wrap bgImage={backgroundImg} >
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
@@ -38,6 +38,8 @@ const Wrap = styled.div`
 const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
 `;
 
 const ButtonGroup = styled.div`
