@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-function Section({title,backgroundImg,description,leftBtnText,rightBtnText,}) {
+function Section({
+  title,
+  backgroundImg,
+  description,
+  leftBtnText,
+  rightBtnText,
+}) {
   return (
-    <Wrap bgImage={backgroundImg} >
+    <Wrap bgImage={backgroundImg}>
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
